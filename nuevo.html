@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <link href="tutoriales.html">
+    <link href="blog.html">
+    <link href="productos.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<section>
+  <div class="container-fluid">
+    <!-- I N I C I O    navbar-->
+    <nav class="navbar bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img class="img-fluid" src="./LOGOTIPO.jpg" width="25%">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nuevo.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutoriales.html">Tutoriales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservar</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- F I N    navbar-->
+  </div>
+</<section>  
+<section>
+  <!--div padre este es el principal, que que hace que se vea responsivo-->
+  <div class="container-fluid">
+        <!-- I N I C I O grupo de tarjetas (card)-->
+        <div class="row row-cols-auto">
+          <!--I N I C I O  TARJETA DE TUTORIALES-->
+          <div class="col-6 col-sm-4">
+            <a href="tutoriales.html">
+              <div class="card">
+              <img src="./foto tutorial-2.png" class="card-img-top" alt="..." height="35%">
+              <div class="card-body" width="24%">
+                <h5 class="card-title">Tutoriales</h5>
+            </a>
+              </div>
+            </div>
+          </div>
+          
+          <!--F I N  TARJETA DE TUTORIALES-->
+
+          <!-- I N I C I O    TARJETA DE BLOG-->
+          <div class="col-6 col-sm-4">
+            <a href="blog.html">
+              <div class="card">
+                <img src="./foto blog.png" class="card-img-top" alt="..." height="35%">
+                <div class="card-body" width="24%">
+                  <h5 class="card-title">Blog</h5>                
+                </div>
+            </a>  
+              </div>
+          </div>
+          <!-- F I N    TARJETA DE BLOG-->
+
+          <!-- I N I C I O    TARJETA DE PRODCUTOS -->
+          <div class="col-6 col-sm-4">
+          <a href="productos.html">
+            <div class="card">
+              <img src="./foto producto.png" class="card-img-top" alt="..." height="35%">
+              <div class="card-body" width="24%">
+                <h5 class="card-title">Productos</h5>                
+              </div>
+            </div>
+          </a>
+          </div>
+          <!-- F I N    TARJETA DE PRODCUTOS -->
+
+          <!-- I N I C I O    TARJETA DE RESERVAR-->
+         
+          <div class="col-6 col-sm-4">
+            <div class="card">
+              <img src="./foto reserva.png" class="card-img-top" alt="..." height="35%">
+              <div class="card-body" width="24%">
+                <!--Intento modal xd-->
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Reservar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Agenda tu cita en una barberia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--F O R M U L A R I O -->
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-12">
+            <label for="inputAddress" class="form-label">Barrio / Localidad /Comuna </label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="">
+          </div>
+          <div class="col-md-12">
+            <label for="inputAddress2" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, o Nº. de piso">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Barrio</label>
+            <select id="inputState" class="form-select">
+              <option selected>Seleccionar</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Nº. Telefono</label>
+            <input type="number" class="form-control" id="inputZip">
+          </div>          
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Reservar</button>
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">¡Hecho!</button>
+        </div>              
+      </div>
+    </div>
+  </div>
+</div>               
+              </div>
+            </div>
+          </div>
+          <!-- F I N    TARJETA DE RESERVAR-->
+        </div>
+        <!-- F I N grupo de tarjetas (card)-->
+  </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
